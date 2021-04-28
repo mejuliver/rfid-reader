@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+<body>
+<strong>Number:</strong><br>
+<span id="number"></span>
+
+<script src="listener.js"></script>
+<script type="text/javascript">
+    listener(function callback(rfid) {
+        document.querySelector("#number").innerHTML = rfid;
+    });
+</script>
+</body>
+</html>
